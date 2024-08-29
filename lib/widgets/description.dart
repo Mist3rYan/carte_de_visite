@@ -12,11 +12,11 @@ class Description extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.all(20.0),
         child: Text(
-          'Passionné par le développement web et mobile, je suis à votre disposition pour vous accompagner dans vos projets.\nN\'hésitez pas à me contacter pour plus d\'informations.\n\nmycodeapps@gmail.com',
+          'Diplomé en développement web et mobile, je suis prêt à vous accompagner dans vos projets.\n Je travail avec Flutter, React, Symfony et toutes les technologies du web.\nN\'hésitez pas à me contacter pour plus d\'informations.\n\nmycodeapps@gmail.com',
           textAlign: TextAlign.center,
           style: TextStyle(
             fontFamily: 'JosefinSans',
-            fontSize: 20,
+            fontSize: 18,
             height: 1.5,
             color: Colors.black,
           ),

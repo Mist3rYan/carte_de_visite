@@ -8,22 +8,25 @@ class EnSavoirPlusButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: const Color(0xff052555),
-      ),
-      onPressed: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (BuildContext context) {
-          return const Details();
-        }));
-      },
-      child: const Text(
-        'En savoir plus',
-        style: TextStyle(
-          fontSize: 20,
-          fontFamily: 'JosefinSans',
-          color: Colors.white70,
+    return SizedBox(
+      width: 250,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: const Color(0xff052555),
+        ),
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (BuildContext context) {
+            return const Details();
+          }));
+        },
+        child: const Text(
+          'En savoir plus',
+          style: TextStyle(
+            fontSize: 20,
+            fontFamily: 'JosefinSans',
+            color: Colors.white70,
+          ),
         ),
       ),
     );

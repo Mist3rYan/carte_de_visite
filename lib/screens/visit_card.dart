@@ -20,7 +20,12 @@ class VisitCard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white60,
       appBar: AppBar(
-        title: const Text('Ma carte de visite'),
+        title: const Text(
+          'Ma carte de visite',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         backgroundColor: const Color(0xff052555),
         elevation: 0,
       ),
@@ -37,14 +42,14 @@ class VisitCard extends StatelessWidget {
         child: Center(
           child: SingleChildScrollView(
             reverse: true,
-            child: Padding(
-              padding: const EdgeInsets.all(15.0),
+            child: Container(
+              margin: const EdgeInsets.all(15.0),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const PhotoProfil(),
                   const SizedBox(
-                    height: 5,
+                    height: 20,
                   ),
                   Card(
                     color: Colors.white,

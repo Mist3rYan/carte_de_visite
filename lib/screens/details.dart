@@ -1,6 +1,7 @@
 import 'package:carte_de_visite/widgets/photo_profil.dart';
 import 'package:flutter/material.dart';
 import 'package:carte_de_visite/widgets/description.dart';
+import 'package:carte_de_visite/widgets/portfolio.dart';
 
 class Details extends StatelessWidget {
   const Details({super.key});
@@ -10,7 +11,11 @@ class Details extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white60,
       appBar: AppBar(
-        title: const Text('En savoir plus'),
+        title: const Text(
+          'En savoir plus',
+          style: TextStyle(color: Colors.white),
+        ),
+        iconTheme: const IconThemeData(color: Colors.white),
         backgroundColor: const Color(0xff052555),
         elevation: 0,
       ),
@@ -30,13 +35,14 @@ class Details extends StatelessWidget {
             child: Container(
               margin: const EdgeInsets.all(15.0),
               child: const Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   PhotoProfil(),
                   SizedBox(
                     height: 20,
                   ),
                   Description(),
+                  PortfolioButton(),
                 ],
               ),
             ),
